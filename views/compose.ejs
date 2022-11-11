@@ -1,0 +1,26 @@
+<%- include("partials/header") -%>
+
+<h1>Compose</h1>
+<form action="/compose" method="post">
+    <div class="form-group">
+        <label for="">Title</label>
+        <input type="text" class="form-control" placeholder="" name="postTitle" autocomplete="off">
+        <label for="">Post</label>
+        <textarea name="postContent" class="form-control" id="" cols="30" rows="5"></textarea>
+    </div>
+    <button class="btn btn-primary">Publish</button>
+</form>
+<%- include("partials/footer") -%>
+
+<!--The form i created, it is formatted using pure html like break line tag and width,style in html tags but same can be achieved using bootstrap
+    forms -->
+<!--<form action="/compose" method="post">
+    <label for="">Title</label> <br>
+    <input type="text" placeholder="" name="content" style="width: 100%;">
+    <br>
+    <label for="">Post</label>
+    <br>
+    <textarea name="" id="" cols="" rows="5" style="width: 100%;"></textarea>
+    <br>
+    <button class="btn btn-primary">Publish</button>
+</form>-->
